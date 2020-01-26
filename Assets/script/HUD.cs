@@ -16,7 +16,19 @@ public class HUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R)) {
+            properties woodScript = GameObject.Find("LvlWood").GetComponent<properties>();
+            properties waterScript = GameObject.Find("LvlWater").GetComponent<properties>();
+            properties earthScript = GameObject.Find("LvlEarth").GetComponent<properties>();
+            properties metalScript = GameObject.Find("LvlMetal").GetComponent<properties>();
+            properties fireScript = GameObject.Find("LvlFire").GetComponent<properties>();
+
+            woodScript.level--;
+            waterScript.level--;
+            earthScript.level--;
+            metalScript.level--;
+            fireScript.level--;
+        }
     }
 
     public void OpenMessagePanel(string item) {
