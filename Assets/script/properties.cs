@@ -31,7 +31,7 @@ public class properties : MonoBehaviour
     }
 
     private GameObject randomElement(){
-        float pick = Random.Range(-10.0f, -10.0f);
+        float pick = Random.Range(-10.0f, 10.0f);
         if (pick > 0) return element;
         else return element2;
     }
