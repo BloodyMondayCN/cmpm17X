@@ -51,6 +51,7 @@
      <Compile Include="Assets\script\PickUp.cs" />
      <Compile Include="Assets\script\Talisman\TalisDisplay.cs" />
      <Compile Include="Assets\script\Talisman\TalisDrag.cs" />
+     <Compile Include="Assets\script\Talisman\TalisObj.cs" />
      <Compile Include="Assets\script\playerMovement.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/Heatler/Games/cmpm17X/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

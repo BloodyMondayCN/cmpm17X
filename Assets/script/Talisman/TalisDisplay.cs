@@ -6,6 +6,7 @@ public class TalisDisplay : MonoBehaviour
 {
     public GameObject display;
     public float timer;
+    public GameObject prefab, player;
 
     private float curTime;
 
@@ -22,6 +23,9 @@ public class TalisDisplay : MonoBehaviour
 			display.SetActive(true);
             curTime = timer;
 		}
+        if(!display.activeSelf && curTime > 0){
+            curTime = 0;
+        }
 
         if(curTime > 0){
             curTime -= Time.deltaTime;
