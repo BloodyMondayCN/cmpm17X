@@ -9,7 +9,7 @@ public class PickUp : MonoBehaviour
     public HUD Hud;
     public BackpackDisplay backpack;
     private GameObject itemToPickUp = null;
-
+	private Teleportation tl;
     // Update is called once per frame
     void Update()
     {
@@ -30,6 +30,16 @@ public class PickUp : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D obj) {
+		if(obj.gameObject.name.Contains("teleport")){
+			
+			tl = obj.gameObject.GetComponent<Teleportation>();
+			//this.transform.position = new Vector2(obj.gameObject.GetComponent<Teleportation>().newX,obj.gameObject.GetComponent<Teleportation>().newY);
+			if (tl == null){
+				return;
+			}
+			this.transform.position = new Vector2(tl.newX,tl.newY);
+			return;
+		}
         itemToPickUp = obj.gameObject;
         Hud.OpenMessagePanel(obj.gameObject.name);
     }

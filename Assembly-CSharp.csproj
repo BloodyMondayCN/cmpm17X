@@ -59,6 +59,7 @@
      <Compile Include="Assets\script\PickUp.cs" />
      <Compile Include="Assets\script\playerMovement.cs" />
      <Compile Include="Assets\script\properties.cs" />
+     <Compile Include="Assets\script\Teleportation.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/zhengyang zhang/Documents/cmpm17X/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
